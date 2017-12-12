@@ -63,13 +63,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(770, 135);
+            this.panel1.Size = new System.Drawing.Size(772, 135);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // lblfamily
             // 
             this.lblfamily.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblfamily.Location = new System.Drawing.Point(112, 69);
+            this.lblfamily.Location = new System.Drawing.Point(117, 69);
             this.lblfamily.Name = "lblfamily";
             this.lblfamily.Size = new System.Drawing.Size(184, 22);
             this.lblfamily.TabIndex = 5;
@@ -78,7 +81,7 @@
             // lblname
             // 
             this.lblname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblname.Location = new System.Drawing.Point(112, 41);
+            this.lblname.Location = new System.Drawing.Point(117, 40);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(184, 22);
             this.lblname.TabIndex = 3;
@@ -114,7 +117,7 @@
             this.lbltab1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbltab1.AutoSize = true;
             this.lbltab1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab1.Location = new System.Drawing.Point(62, 173);
+            this.lbltab1.Location = new System.Drawing.Point(64, 171);
             this.lbltab1.Name = "lbltab1";
             this.lbltab1.Size = new System.Drawing.Size(34, 17);
             this.lbltab1.TabIndex = 0;
@@ -122,22 +125,23 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(636, 143);
+            this.pictureBox2.Location = new System.Drawing.Point(679, 110);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lbltab2
             // 
             this.lbltab2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbltab2.AutoSize = true;
             this.lbltab2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab2.Location = new System.Drawing.Point(157, 173);
+            this.lbltab2.Location = new System.Drawing.Point(159, 171);
             this.lbltab2.Name = "lbltab2";
             this.lbltab2.Size = new System.Drawing.Size(59, 17);
             this.lbltab2.TabIndex = 2;
@@ -149,7 +153,7 @@
             this.lbltab3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbltab3.AutoSize = true;
             this.lbltab3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab3.Location = new System.Drawing.Point(276, 173);
+            this.lbltab3.Location = new System.Drawing.Point(278, 171);
             this.lbltab3.Name = "lbltab3";
             this.lbltab3.Size = new System.Drawing.Size(60, 17);
             this.lbltab3.TabIndex = 3;
@@ -174,13 +178,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(770, 545);
+            this.ClientSize = new System.Drawing.Size(772, 540);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.lbltab3);
             this.Controls.Add(this.lbltab2);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lbltab1);
-            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
