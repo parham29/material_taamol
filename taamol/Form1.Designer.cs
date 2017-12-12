@@ -69,7 +69,7 @@
             // lblfamily
             // 
             this.lblfamily.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblfamily.Location = new System.Drawing.Point(112, 74);
+            this.lblfamily.Location = new System.Drawing.Point(112, 69);
             this.lblfamily.Name = "lblfamily";
             this.lblfamily.Size = new System.Drawing.Size(184, 22);
             this.lblfamily.TabIndex = 5;
@@ -78,7 +78,7 @@
             // lblname
             // 
             this.lblname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblname.Location = new System.Drawing.Point(112, 32);
+            this.lblname.Location = new System.Drawing.Point(112, 41);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(184, 22);
             this.lblname.TabIndex = 3;
