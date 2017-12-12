@@ -24,19 +24,37 @@ namespace taamol
            
         }
        
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        private void header_MouseDown(object sender, MouseEventArgs e)
         {
             dr.Grab(this);
         }
 
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        private void header_MouseUp(object sender, MouseEventArgs e)
         {
             dr.Release();
         }
 
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        private void header_MouseMove(object sender, MouseEventArgs e)
         {
             dr.MoveObject();
+        }
+
+        private void lbltab1_Click(object sender, EventArgs e)
+        {
+            line.Width = lbltab1.Width;
+            line.Left = lbltab1.Left;
+        }
+
+        private void lbltab2_Click(object sender, EventArgs e)
+        {
+            line.Width = lbltab2.Width;
+            line.Left = lbltab2.Left;
+        }
+
+        private void lbltab3_Click(object sender, EventArgs e)
+        {
+            line.Width = lbltab3.Width;
+            line.Left = lbltab3.Left;
         }
     }
 }
