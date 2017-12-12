@@ -86,7 +86,7 @@
             this.lblname.Size = new System.Drawing.Size(184, 22);
             this.lblname.TabIndex = 3;
             this.lblname.Text = "name";
-            this.lblname.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // pictureBox1
             // 
@@ -134,7 +134,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            
             // 
             // lbltab2
             // 
@@ -146,7 +146,7 @@
             this.lbltab2.Size = new System.Drawing.Size(59, 17);
             this.lbltab2.TabIndex = 2;
             this.lbltab2.Text = "member";
-            this.lbltab2.Click += new System.EventHandler(this.bunifuCustomLabel2_Click);
+            
             // 
             // lbltab3
             // 

@@ -23,27 +23,7 @@ namespace taamol
         {
            
         }
-
-        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             dr.Grab(this);
