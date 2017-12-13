@@ -56,5 +56,10 @@ namespace taamol
             line.Width = lbltab3.Width;
             line.Left = lbltab3.Left;
         }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
