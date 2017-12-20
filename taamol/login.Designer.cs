@@ -37,7 +37,6 @@
             this.Lbl_username = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Txt_password = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.Txt_username = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Lbl_header = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,8 +51,8 @@
             this.Btn_login.ActiveBorderThickness = 1;
             this.Btn_login.ActiveCornerRadius = 20;
             this.Btn_login.ActiveFillColor = System.Drawing.Color.OrangeRed;
-            this.Btn_login.ActiveForecolor = System.Drawing.Color.White;
-            this.Btn_login.ActiveLineColor = System.Drawing.Color.White;
+            this.Btn_login.ActiveForecolor = System.Drawing.SystemColors.WindowText;
+            this.Btn_login.ActiveLineColor = System.Drawing.Color.Transparent;
             this.Btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.Btn_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_login.BackgroundImage")));
             this.Btn_login.ButtonText = "Login";
@@ -79,8 +78,7 @@
             this.panel1.Controls.Add(this.Lbl_username);
             this.panel1.Controls.Add(this.Txt_password);
             this.panel1.Controls.Add(this.Txt_username);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(31, 63);
+            this.panel1.Location = new System.Drawing.Point(35, 82);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(372, 276);
             this.panel1.TabIndex = 1;
@@ -116,51 +114,41 @@
             this.Txt_password.BorderThickness = 1;
             this.Txt_password.CausesValidation = false;
             this.Txt_password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_password.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Txt_password.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.Txt_password.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Txt_password.isPassword = true;
             this.Txt_password.Location = new System.Drawing.Point(7, 166);
             this.Txt_password.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_password.Name = "Txt_password";
-            this.Txt_password.Size = new System.Drawing.Size(353, 44);
+            this.Txt_password.Size = new System.Drawing.Size(372, 44);
             this.Txt_password.TabIndex = 2;
             this.Txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Txt_username
             // 
-            this.Txt_username.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Txt_username.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Txt_username.BorderColorFocused = System.Drawing.Color.OrangeRed;
             this.Txt_username.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.Txt_username.BorderColorMouseHover = System.Drawing.Color.OrangeRed;
             this.Txt_username.BorderThickness = 1;
             this.Txt_username.CausesValidation = false;
             this.Txt_username.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Txt_username.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Txt_username.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_username.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Txt_username.isPassword = false;
             this.Txt_username.Location = new System.Drawing.Point(6, 81);
             this.Txt_username.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_username.Name = "Txt_username";
-            this.Txt_username.Size = new System.Drawing.Size(353, 44);
+            this.Txt_username.Size = new System.Drawing.Size(395, 44);
             this.Txt_username.TabIndex = 1;
             this.Txt_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(6, 184);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(361, 21);
-            this.textBox1.TabIndex = 3;
             // 
             // Lbl_header
             // 
             this.Lbl_header.AutoSize = true;
             this.Lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_header.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lbl_header.Location = new System.Drawing.Point(142, 21);
+            this.Lbl_header.Location = new System.Drawing.Point(157, 34);
             this.Lbl_header.Name = "Lbl_header";
             this.Lbl_header.Size = new System.Drawing.Size(143, 25);
             this.Lbl_header.TabIndex = 2;
@@ -172,8 +160,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(445, 463);
-            this.Controls.Add(this.Lbl_header);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Lbl_header);
             this.Controls.Add(this.Btn_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
@@ -196,7 +184,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Btn_login;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel Lbl_header;
-        private System.Windows.Forms.TextBox textBox1;
         private Bunifu.Framework.UI.BunifuMetroTextbox Txt_username;
         private Bunifu.Framework.UI.BunifuCustomLabel Lbl_password;
         private Bunifu.Framework.UI.BunifuCustomLabel Lbl_username;

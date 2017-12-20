@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.header = new System.Windows.Forms.Panel();
@@ -163,7 +163,7 @@
             this.lbltab1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab1, BunifuAnimatorNS.DecorationType.None);
             this.lbltab1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab1.Location = new System.Drawing.Point(41, 173);
+            this.lbltab1.Location = new System.Drawing.Point(62, 164);
             this.lbltab1.Name = "lbltab1";
             this.lbltab1.Size = new System.Drawing.Size(68, 33);
             this.lbltab1.TabIndex = 0;
@@ -176,7 +176,7 @@
             this.lbltab2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab2, BunifuAnimatorNS.DecorationType.None);
             this.lbltab2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab2.Location = new System.Drawing.Point(159, 173);
+            this.lbltab2.Location = new System.Drawing.Point(169, 164);
             this.lbltab2.Name = "lbltab2";
             this.lbltab2.Size = new System.Drawing.Size(61, 33);
             this.lbltab2.TabIndex = 2;
@@ -189,7 +189,7 @@
             this.lbltab3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab3, BunifuAnimatorNS.DecorationType.None);
             this.lbltab3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab3.Location = new System.Drawing.Point(266, 173);
+            this.lbltab3.Location = new System.Drawing.Point(278, 164);
             this.lbltab3.Name = "lbltab3";
             this.lbltab3.Size = new System.Drawing.Size(67, 33);
             this.lbltab3.TabIndex = 3;
@@ -204,7 +204,7 @@
             this.line.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineThickness = 3;
-            this.line.Location = new System.Drawing.Point(48, 194);
+            this.line.Location = new System.Drawing.Point(65, 185);
             this.line.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.line.Name = "line";
             this.line.Size = new System.Drawing.Size(52, 12);
@@ -216,22 +216,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation6;
             // 
             // financials1
             // 
@@ -273,17 +273,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1213, 721);
+            this.Controls.Add(this.line);
             this.Controls.Add(this.tab11);
             this.Controls.Add(this.financials1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.header);
-            this.Controls.Add(this.line);
             this.Controls.Add(this.lbltab3);
             this.Controls.Add(this.lbltab2);
             this.Controls.Add(this.lbltab1);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.header.ResumeLayout(false);

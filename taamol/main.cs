@@ -24,7 +24,8 @@ namespace taamol
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            line.Width = lbltab1.Width;
+            line.Left = lbltab1.Left;
 
         }
 
@@ -45,36 +46,41 @@ namespace taamol
 
         private void lbltab1_Click(object sender, EventArgs e)
         {
-            line.Width = lbltab1.Width;
-            line.Left = lbltab1.Left;
-            tab11.Visible = false;
-            tab11.BringToFront();
-            bunifuTransition1.ShowSync(tab11);
+            if (line.Left != lbltab1.Left)
+            {
+                line.Width = lbltab1.Width;
+                line.Left = lbltab1.Left;
+                tab11.Visible = false;
+                tab11.BringToFront();
+                bunifuTransition1.ShowSync(tab11);
+            }
           
             
            
         }
 
         private void lbltab2_Click(object sender, EventArgs e)
-        {
-            line.Width = lbltab2.Width;
-            line.Left = lbltab2.Left;
-            financials1.Visible = false;
-            financials1.BringToFront();
-            
-            bunifuTransition1.ShowSync(financials1);
+        {   if(line.Left!= lbltab2.Left) {
+                line.Width = lbltab2.Width;
+                line.Left = lbltab2.Left;
+                financials1.Visible = false;
+                financials1.BringToFront();
+                bunifuTransition1.ShowSync(financials1);
+            }
+           
 
         }
 
         private void lbltab3_Click(object sender, EventArgs e)
         {
+            
             line.Width = lbltab3.Width;
             line.Left = lbltab3.Left;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Close();
         }
 
         private void tab11_Load(object sender, EventArgs e)

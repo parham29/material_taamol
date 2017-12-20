@@ -60,7 +60,7 @@ namespace taamol
             else
             {
 
-                bool result = false;
+               
                 con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = zahra; pwd = zahra5312");
 
 
