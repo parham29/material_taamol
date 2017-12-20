@@ -11,32 +11,20 @@ using System.Windows.Forms;
 
 namespace taamol
 {
-    public partial class Form1 : Form
+    public partial class main : Form
     {
-        public Form1()
-        {
+         int id;
+        public main(int id)
+        {   
             InitializeComponent();
+            this.id = id;
         }
         SqlConnection con;
         Bunifu.Framework.UI.Drag dr = new Bunifu.Framework.UI.Drag();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = zahra; pwd = zahra5312");
-            // SqlCommand com = new SqlCommand("exec addamin", con);
-            DataSet ds = new DataSet();
-          //  SqlDataAdapter da = new SqlDataAdapter(com);
-
-            con.Open();
-            //da.Fill(ds);
-            
-            con.Close();
-
-
-            //SqlCommand com = new SqlCommand("getinfo", con);
-
-            // TODO: This line of code loads data into the 'gyms_ManagmentDataSet2.addadmin' table. You can move, or remove it, as needed.
-            // this.addadminTableAdapter.Fill(this.gyms_ManagmentDataSet2.addadmin);
+           
 
         }
 
@@ -62,6 +50,8 @@ namespace taamol
             tab11.Visible = false;
             tab11.BringToFront();
             bunifuTransition1.ShowSync(tab11);
+          
+            
            
         }
 
@@ -71,6 +61,7 @@ namespace taamol
             line.Left = lbltab2.Left;
             financials1.Visible = false;
             financials1.BringToFront();
+            
             bunifuTransition1.ShowSync(financials1);
 
         }
@@ -88,7 +79,8 @@ namespace taamol
 
         private void tab11_Load(object sender, EventArgs e)
         {
-
+           
+            tab11.setid(id);
         }
 
         private void lblname_Click(object sender, EventArgs e)
@@ -100,5 +92,7 @@ namespace taamol
         {
 
         }
+      
+       
     }
 }
