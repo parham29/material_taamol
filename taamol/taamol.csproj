@@ -50,11 +50,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="financials.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="financials.Designer.cs">
+      <DependentUpon>financials.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gyms_ManagmentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gyms_ManagmentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gyms_ManagmentDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gyms_ManagmentDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gyms_ManagmentDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gyms_ManagmentDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,8 +91,20 @@
     <Compile Include="tab1.Designer.cs">
       <DependentUpon>tab1.cs</DependentUpon>
     </Compile>
+    <Compile Include="tab3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tab3.Designer.cs">
+      <DependentUpon>tab3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="financials.resx">
+      <DependentUpon>financials.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,6 +119,42 @@
     <EmbeddedResource Include="tab1.resx">
       <DependentUpon>tab1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="tab3.resx">
+      <DependentUpon>tab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Gyms_ManagmentDataSet.xsc">
+      <DependentUpon>Gyms_ManagmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gyms_ManagmentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gyms_ManagmentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gyms_ManagmentDataSet.xss">
+      <DependentUpon>Gyms_ManagmentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gyms_ManagmentDataSet1.xsc">
+      <DependentUpon>Gyms_ManagmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gyms_ManagmentDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gyms_ManagmentDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gyms_ManagmentDataSet1.xss">
+      <DependentUpon>Gyms_ManagmentDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Gyms_ManagmentDataSet2.xsc">
+      <DependentUpon>Gyms_ManagmentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Gyms_ManagmentDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gyms_ManagmentDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gyms_ManagmentDataSet2.xss">
+      <DependentUpon>Gyms_ManagmentDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
