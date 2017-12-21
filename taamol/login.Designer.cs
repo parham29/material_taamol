@@ -86,22 +86,22 @@
             // Lbl_password
             // 
             this.Lbl_password.AutoSize = true;
-            this.Lbl_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_password.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_password.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Lbl_password.Location = new System.Drawing.Point(3, 137);
             this.Lbl_password.Name = "Lbl_password";
-            this.Lbl_password.Size = new System.Drawing.Size(83, 20);
+            this.Lbl_password.Size = new System.Drawing.Size(88, 21);
             this.Lbl_password.TabIndex = 7;
             this.Lbl_password.Text = "Password";
             // 
             // Lbl_username
             // 
             this.Lbl_username.AutoSize = true;
-            this.Lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_username.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_username.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Lbl_username.Location = new System.Drawing.Point(3, 51);
             this.Lbl_username.Name = "Lbl_username";
-            this.Lbl_username.Size = new System.Drawing.Size(86, 20);
+            this.Lbl_username.Size = new System.Drawing.Size(93, 21);
             this.Lbl_username.TabIndex = 6;
             this.Lbl_username.Text = "Username";
             // 
@@ -146,11 +146,11 @@
             // Lbl_header
             // 
             this.Lbl_header.AutoSize = true;
-            this.Lbl_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_header.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_header.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lbl_header.Location = new System.Drawing.Point(157, 34);
+            this.Lbl_header.Location = new System.Drawing.Point(142, 34);
             this.Lbl_header.Name = "Lbl_header";
-            this.Lbl_header.Size = new System.Drawing.Size(143, 25);
+            this.Lbl_header.Size = new System.Drawing.Size(156, 23);
             this.Lbl_header.TabIndex = 2;
             this.Lbl_header.Text = "Manager Login";
             // 

@@ -101,8 +101,9 @@
             // lblfamily
             // 
             this.bunifuTransition1.SetDecoration(this.lblfamily, BunifuAnimatorNS.DecorationType.None);
+            this.lblfamily.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblfamily.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblfamily.Location = new System.Drawing.Point(117, 69);
+            this.lblfamily.Location = new System.Drawing.Point(134, 68);
             this.lblfamily.Name = "lblfamily";
             this.lblfamily.Size = new System.Drawing.Size(184, 22);
             this.lblfamily.TabIndex = 5;
@@ -111,8 +112,9 @@
             // lblname
             // 
             this.bunifuTransition1.SetDecoration(this.lblname, BunifuAnimatorNS.DecorationType.None);
+            this.lblname.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblname.Location = new System.Drawing.Point(117, 40);
+            this.lblname.Location = new System.Drawing.Point(133, 37);
             this.lblname.Name = "lblname";
             this.lblname.Size = new System.Drawing.Size(184, 22);
             this.lblname.TabIndex = 3;
@@ -123,10 +125,10 @@
             // 
             this.bunifuTransition1.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
             this.pictureBox1.Image = global::taamol.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,10 +165,12 @@
             // 
             this.lbltab1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab1, BunifuAnimatorNS.DecorationType.None);
-            this.lbltab1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab1.Location = new System.Drawing.Point(62, 164);
+            this.lbltab1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltab1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbltab1.Location = new System.Drawing.Point(55, 164);
             this.lbltab1.Name = "lbltab1";
-            this.lbltab1.Size = new System.Drawing.Size(68, 33);
+            this.lbltab1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lbltab1.Size = new System.Drawing.Size(88, 33);
             this.lbltab1.TabIndex = 0;
             this.lbltab1.Text = "gym";
             this.lbltab1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -176,10 +180,12 @@
             // 
             this.lbltab2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab2, BunifuAnimatorNS.DecorationType.None);
-            this.lbltab2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab2.Location = new System.Drawing.Point(169, 164);
+            this.lbltab2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltab2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbltab2.Location = new System.Drawing.Point(157, 164);
             this.lbltab2.Name = "lbltab2";
-            this.lbltab2.Size = new System.Drawing.Size(61, 33);
+            this.lbltab2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lbltab2.Size = new System.Drawing.Size(129, 33);
             this.lbltab2.TabIndex = 2;
             this.lbltab2.Text = "member";
             this.lbltab2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -189,10 +195,12 @@
             // 
             this.lbltab3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.bunifuTransition1.SetDecoration(this.lbltab3, BunifuAnimatorNS.DecorationType.None);
-            this.lbltab3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbltab3.Location = new System.Drawing.Point(278, 164);
+            this.lbltab3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltab3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbltab3.Location = new System.Drawing.Point(299, 164);
             this.lbltab3.Name = "lbltab3";
-            this.lbltab3.Size = new System.Drawing.Size(67, 33);
+            this.lbltab3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.lbltab3.Size = new System.Drawing.Size(120, 33);
             this.lbltab3.TabIndex = 3;
             this.lbltab3.Text = "financial";
             this.lbltab3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -205,7 +213,7 @@
             this.line.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineThickness = 3;
-            this.line.Location = new System.Drawing.Point(65, 185);
+            this.line.Location = new System.Drawing.Point(71, 187);
             this.line.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.line.Name = "line";
             this.line.Size = new System.Drawing.Size(52, 12);
@@ -299,7 +307,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.main_Load);
             this.header.ResumeLayout(false);
-            this.header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
