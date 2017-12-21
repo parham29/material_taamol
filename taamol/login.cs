@@ -60,8 +60,8 @@ namespace taamol
             else
             {
 
-               
-                con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = zahra; pwd = zahra5312");
+
+                con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = fapzadmin; pwd = 13243546");
 
 
                 SqlCommand com = new SqlCommand("exec loginManager @username, @password", con);
