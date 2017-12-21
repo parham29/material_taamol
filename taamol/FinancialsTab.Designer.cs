@@ -1,6 +1,6 @@
 ﻿namespace taamol
 {
-    partial class tab3
+    partial class FinancialsTab
     {
         /// <summary> 
         /// Required designer variable.

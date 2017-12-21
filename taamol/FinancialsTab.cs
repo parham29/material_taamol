@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace taamol
 {
-    public partial class tab3 : UserControl
+    public partial class FinancialsTab : UserControl
     {
-        public tab3()
+        public FinancialsTab()
         {
             InitializeComponent();
         }

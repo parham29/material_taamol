@@ -50,9 +50,9 @@ namespace taamol
             {
                 line.Width = lbltab1.Width;
                 line.Left = lbltab1.Left;
-                tab11.Visible = false;
-                tab11.BringToFront();
-                bunifuTransition1.ShowSync(tab11);
+                gyms_tab1.Visible = false;
+                gyms_tab1.BringToFront();
+                bunifuTransition1.ShowSync(gyms_tab1);
             }
           
             
@@ -63,9 +63,9 @@ namespace taamol
         {   if(line.Left!= lbltab2.Left) {
                 line.Width = lbltab2.Width;
                 line.Left = lbltab2.Left;
-                financials1.Visible = false;
-                financials1.BringToFront();
-                bunifuTransition1.ShowSync(financials1);
+                members_tab1.Visible = false;
+                members_tab1.BringToFront();
+                bunifuTransition1.ShowSync(members_tab1);
             }
            
 
@@ -73,12 +73,17 @@ namespace taamol
 
         private void lbltab3_Click(object sender, EventArgs e)
         {
-            
-            line.Width = lbltab3.Width;
-            line.Left = lbltab3.Left;
+            if (line.Left != lbltab3.Left)
+            {
+                line.Width = lbltab3.Width;
+                line.Left = lbltab3.Left;
+                financialsTab1.Visible = false;
+                financialsTab1.BringToFront();
+                bunifuTransition1.ShowSync(financialsTab1);
+            }
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        private void img_exit_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -86,7 +91,7 @@ namespace taamol
         private void tab11_Load(object sender, EventArgs e)
         {
            
-            tab11.setid(id);
+            gyms_tab1.setid(id);
         }
 
         private void lblname_Click(object sender, EventArgs e)

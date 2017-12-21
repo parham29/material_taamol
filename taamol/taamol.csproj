@@ -55,11 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DrawHelper.cs" />
-    <Compile Include="financials.cs">
+    <Compile Include="MembersTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="financials.Designer.cs">
-      <DependentUpon>financials.cs</DependentUpon>
+    <Compile Include="MembersTab.Designer.cs">
+      <DependentUpon>MembersTab.cs</DependentUpon>
     </Compile>
     <Compile Include="FontManager.cs" />
     <Compile Include="main.cs">
@@ -91,20 +91,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Gyms.cs">
+    <Compile Include="GymsTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Gyms.Designer.cs">
-      <DependentUpon>Gyms.cs</DependentUpon>
+    <Compile Include="GymsTab.Designer.cs">
+      <DependentUpon>GymsTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="tab3.cs">
+    <Compile Include="FinancialsTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="tab3.Designer.cs">
-      <DependentUpon>tab3.cs</DependentUpon>
+    <Compile Include="FinancialsTab.Designer.cs">
+      <DependentUpon>FinancialsTab.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="financials.resx">
-      <DependentUpon>financials.cs</DependentUpon>
+    <EmbeddedResource Include="MembersTab.resx">
+      <DependentUpon>MembersTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
@@ -122,11 +122,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Gyms.resx">
-      <DependentUpon>Gyms.cs</DependentUpon>
+    <EmbeddedResource Include="GymsTab.resx">
+      <DependentUpon>GymsTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="tab3.resx">
-      <DependentUpon>tab3.cs</DependentUpon>
+    <EmbeddedResource Include="FinancialsTab.resx">
+      <DependentUpon>FinancialsTab.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Gyms_ManagmentDataSet.xsc">
       <DependentUpon>Gyms_ManagmentDataSet.xsd</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace taamol
 {
-    partial class financials
+    partial class MembersTab
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(financials));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MembersTab));
             this.fapzadminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gyms_ManagmentDataSet = new taamol.Gyms_ManagmentDataSet();
             this.fapz_adminTableAdapter = new taamol.Gyms_ManagmentDataSetTableAdapters.fapz_adminTableAdapter();

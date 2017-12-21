@@ -1,6 +1,6 @@
 ﻿namespace taamol
 {
-    partial class Gyms
+    partial class GymsTab
     {
         /// <summary> 
         /// Required designer variable.

@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace taamol
 {
-    public partial class Gyms : UserControl
+    public partial class GymsTab : UserControl
     {
         SqlConnection con;
         
-        public Gyms()
+        public GymsTab()
         {
             InitializeComponent();
            

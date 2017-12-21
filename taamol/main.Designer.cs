@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.header = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.img_exit = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblfamily = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -45,13 +45,14 @@
             this.lbltab3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.line = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuTransition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.financials1 = new taamol.financials();
-            this.tab11 = new taamol.Gyms();
+            this.members_tab1 = new taamol.MembersTab();
+            this.gyms_tab1 = new taamol.GymsTab();
             this.addadminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gyms_ManagmentDataSet2 = new taamol.Gyms_ManagmentDataSet2();
             this.addadminTableAdapter = new taamol.Gyms_ManagmentDataSet2TableAdapters.addadminTableAdapter();
+            this.financialsTab1 = new taamol.FinancialsTab();
             this.header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.addadminBindingSource)).BeginInit();
@@ -66,7 +67,7 @@
             // header
             // 
             this.header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(84)))), ((int)(((byte)(186)))));
-            this.header.Controls.Add(this.bunifuImageButton1);
+            this.header.Controls.Add(this.img_exit);
             this.header.Controls.Add(this.lblfamily);
             this.header.Controls.Add(this.lblname);
             this.header.Controls.Add(this.pictureBox1);
@@ -82,20 +83,20 @@
             this.header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.header_MouseMove);
             this.header.MouseUp += new System.Windows.Forms.MouseEventHandler(this.header_MouseUp);
             // 
-            // bunifuImageButton1
+            // img_exit
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTransition1.SetDecoration(this.bunifuImageButton1, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(1146, 12);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(23, 22);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 6;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
+            this.img_exit.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTransition1.SetDecoration(this.img_exit, BunifuAnimatorNS.DecorationType.None);
+            this.img_exit.Image = ((System.Drawing.Image)(resources.GetObject("img_exit.Image")));
+            this.img_exit.ImageActive = null;
+            this.img_exit.Location = new System.Drawing.Point(1146, 12);
+            this.img_exit.Name = "img_exit";
+            this.img_exit.Size = new System.Drawing.Size(23, 22);
+            this.img_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_exit.TabIndex = 6;
+            this.img_exit.TabStop = false;
+            this.img_exit.Zoom = 10;
+            this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
             // 
             // lblfamily
             // 
@@ -216,42 +217,42 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation6.AnimateOnlyDifferences = true;
-            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
-            animation6.LeafCoeff = 0F;
-            animation6.MaxTime = 1F;
-            animation6.MinTime = 0F;
-            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
-            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
-            animation6.MosaicSize = 0;
-            animation6.Padding = new System.Windows.Forms.Padding(0);
-            animation6.RotateCoeff = 0F;
-            animation6.RotateLimit = 0F;
-            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
-            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
-            animation6.TimeCoeff = 0F;
-            animation6.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation6;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
-            // financials1
+            // members_tab1
             // 
-            this.financials1.BackColor = System.Drawing.Color.DarkRed;
-            this.bunifuTransition1.SetDecoration(this.financials1, BunifuAnimatorNS.DecorationType.None);
-            this.financials1.Location = new System.Drawing.Point(54, 216);
-            this.financials1.Name = "financials1";
-            this.financials1.Size = new System.Drawing.Size(1114, 483);
-            this.financials1.TabIndex = 6;
-            this.financials1.Load += new System.EventHandler(this.financials1_Load);
+            this.members_tab1.BackColor = System.Drawing.Color.DarkRed;
+            this.bunifuTransition1.SetDecoration(this.members_tab1, BunifuAnimatorNS.DecorationType.None);
+            this.members_tab1.Location = new System.Drawing.Point(54, 216);
+            this.members_tab1.Name = "members_tab1";
+            this.members_tab1.Size = new System.Drawing.Size(1114, 483);
+            this.members_tab1.TabIndex = 6;
+            this.members_tab1.Load += new System.EventHandler(this.financials1_Load);
             // 
-            // tab11
+            // gyms_tab1
             // 
-            this.tab11.BackColor = System.Drawing.Color.Blue;
-            this.bunifuTransition1.SetDecoration(this.tab11, BunifuAnimatorNS.DecorationType.None);
-            this.tab11.Location = new System.Drawing.Point(54, 216);
-            this.tab11.Name = "tab11";
-            this.tab11.Size = new System.Drawing.Size(1114, 483);
-            this.tab11.TabIndex = 5;
-            this.tab11.Load += new System.EventHandler(this.tab11_Load);
+            this.gyms_tab1.BackColor = System.Drawing.Color.Blue;
+            this.bunifuTransition1.SetDecoration(this.gyms_tab1, BunifuAnimatorNS.DecorationType.None);
+            this.gyms_tab1.Location = new System.Drawing.Point(54, 216);
+            this.gyms_tab1.Name = "gyms_tab1";
+            this.gyms_tab1.Size = new System.Drawing.Size(1114, 483);
+            this.gyms_tab1.TabIndex = 5;
+            this.gyms_tab1.Load += new System.EventHandler(this.tab11_Load);
             // 
             // addadminBindingSource
             // 
@@ -267,6 +268,15 @@
             // 
             this.addadminTableAdapter.ClearBeforeFill = true;
             // 
+            // financialsTab1
+            // 
+            this.financialsTab1.BackColor = System.Drawing.Color.Gray;
+            this.bunifuTransition1.SetDecoration(this.financialsTab1, BunifuAnimatorNS.DecorationType.None);
+            this.financialsTab1.Location = new System.Drawing.Point(54, 216);
+            this.financialsTab1.Name = "financialsTab1";
+            this.financialsTab1.Size = new System.Drawing.Size(1114, 483);
+            this.financialsTab1.TabIndex = 7;
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,13 +284,14 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1213, 721);
             this.Controls.Add(this.line);
-            this.Controls.Add(this.tab11);
-            this.Controls.Add(this.financials1);
+            this.Controls.Add(this.gyms_tab1);
+            this.Controls.Add(this.members_tab1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.header);
             this.Controls.Add(this.lbltab3);
             this.Controls.Add(this.lbltab2);
             this.Controls.Add(this.lbltab1);
+            this.Controls.Add(this.financialsTab1);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
@@ -289,7 +300,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.addadminBindingSource)).EndInit();
@@ -312,13 +323,14 @@
         private Bunifu.Framework.UI.BunifuCustomLabel lbltab3;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lblfamily;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private Gyms tab11;
-        private financials financials1;
+        private Bunifu.Framework.UI.BunifuImageButton img_exit;
+        private GymsTab gyms_tab1;
+        private MembersTab members_tab1;
         private BunifuAnimatorNS.BunifuTransition bunifuTransition1;
         private Gyms_ManagmentDataSet2 gyms_ManagmentDataSet2;
         private System.Windows.Forms.BindingSource addadminBindingSource;
         private Gyms_ManagmentDataSet2TableAdapters.addadminTableAdapter addadminTableAdapter;
+        private FinancialsTab financialsTab1;
     }
 }
 
