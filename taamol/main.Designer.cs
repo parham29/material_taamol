@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.header = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(1213, 135);
+            this.header.Size = new System.Drawing.Size(1225, 135);
             this.header.TabIndex = 0;
             this.header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.header_MouseDown);
             this.header.MouseMove += new System.Windows.Forms.MouseEventHandler(this.header_MouseMove);
@@ -85,13 +85,13 @@
             // 
             // img_exit
             // 
-            this.img_exit.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.img_exit.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.img_exit, BunifuAnimatorNS.DecorationType.None);
             this.img_exit.Image = ((System.Drawing.Image)(resources.GetObject("img_exit.Image")));
             this.img_exit.ImageActive = null;
-            this.img_exit.Location = new System.Drawing.Point(1146, 12);
+            this.img_exit.Location = new System.Drawing.Point(1137, 12);
             this.img_exit.Name = "img_exit";
-            this.img_exit.Size = new System.Drawing.Size(23, 22);
+            this.img_exit.Size = new System.Drawing.Size(32, 32);
             this.img_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_exit.TabIndex = 6;
             this.img_exit.TabStop = false;
@@ -167,12 +167,12 @@
             this.bunifuTransition1.SetDecoration(this.lbltab1, BunifuAnimatorNS.DecorationType.None);
             this.lbltab1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltab1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbltab1.Location = new System.Drawing.Point(55, 164);
+            this.lbltab1.Location = new System.Drawing.Point(56, 164);
             this.lbltab1.Name = "lbltab1";
             this.lbltab1.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lbltab1.Size = new System.Drawing.Size(88, 33);
+            this.lbltab1.Size = new System.Drawing.Size(108, 33);
             this.lbltab1.TabIndex = 0;
-            this.lbltab1.Text = "gym";
+            this.lbltab1.Text = "Gym(s)";
             this.lbltab1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbltab1.Click += new System.EventHandler(this.lbltab1_Click);
             // 
@@ -182,12 +182,12 @@
             this.bunifuTransition1.SetDecoration(this.lbltab2, BunifuAnimatorNS.DecorationType.None);
             this.lbltab2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltab2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbltab2.Location = new System.Drawing.Point(157, 164);
+            this.lbltab2.Location = new System.Drawing.Point(176, 164);
             this.lbltab2.Name = "lbltab2";
             this.lbltab2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lbltab2.Size = new System.Drawing.Size(129, 33);
+            this.lbltab2.Size = new System.Drawing.Size(148, 33);
             this.lbltab2.TabIndex = 2;
-            this.lbltab2.Text = "member";
+            this.lbltab2.Text = "Member(s)";
             this.lbltab2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbltab2.Click += new System.EventHandler(this.lbltab2_Click);
             // 
@@ -197,12 +197,12 @@
             this.bunifuTransition1.SetDecoration(this.lbltab3, BunifuAnimatorNS.DecorationType.None);
             this.lbltab3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltab3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbltab3.Location = new System.Drawing.Point(299, 164);
+            this.lbltab3.Location = new System.Drawing.Point(335, 164);
             this.lbltab3.Name = "lbltab3";
             this.lbltab3.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.lbltab3.Size = new System.Drawing.Size(120, 33);
+            this.lbltab3.Size = new System.Drawing.Size(139, 33);
             this.lbltab3.TabIndex = 3;
-            this.lbltab3.Text = "financial";
+            this.lbltab3.Text = "Financial(s)";
             this.lbltab3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lbltab3.Click += new System.EventHandler(this.lbltab3_Click);
             // 
@@ -213,10 +213,10 @@
             this.line.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
             this.line.LineThickness = 3;
-            this.line.Location = new System.Drawing.Point(71, 187);
+            this.line.Location = new System.Drawing.Point(63, 187);
             this.line.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.line.Name = "line";
-            this.line.Size = new System.Drawing.Size(52, 12);
+            this.line.Size = new System.Drawing.Size(91, 12);
             this.line.TabIndex = 4;
             this.line.Transparency = 255;
             this.line.Vertical = false;
@@ -225,22 +225,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // members_tab
             // 
@@ -290,15 +290,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1213, 721);
+            this.ClientSize = new System.Drawing.Size(1225, 721);
             this.Controls.Add(this.line);
-            this.Controls.Add(this.gyms_tab);
-            this.Controls.Add(this.members_tab);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.header);
             this.Controls.Add(this.lbltab3);
             this.Controls.Add(this.lbltab2);
             this.Controls.Add(this.lbltab1);
+            this.Controls.Add(this.gyms_tab);
+            this.Controls.Add(this.members_tab);
             this.Controls.Add(this.financials_tab);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

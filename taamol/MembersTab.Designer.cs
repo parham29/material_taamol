@@ -231,17 +231,17 @@
             this.bunifuMaterialTextbox1.Text = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // financials
+            // MembersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkRed;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.bunifuFlatButton3);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Name = "financials";
+            this.Name = "MembersTab";
             this.Size = new System.Drawing.Size(1037, 455);
             ((System.ComponentModel.ISupportInitialize)(this.fapzadminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gyms_ManagmentDataSet)).EndInit();

@@ -20,7 +20,7 @@ namespace taamol
             InitializeComponent();
            
         }
-        public void setid(int id) {
+        public void getGyms(int id) {
 
             con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = fapzadmin; pwd = 13243546");
             DataSet ds = new DataSet();

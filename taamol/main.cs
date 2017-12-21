@@ -91,7 +91,7 @@ namespace taamol
         private void gyms_tab_Load(object sender, EventArgs e)
         {
            
-            gyms_tab.setid(id);
+            gyms_tab.getGyms(id);
         }
 
         private void lblname_Click(object sender, EventArgs e)
