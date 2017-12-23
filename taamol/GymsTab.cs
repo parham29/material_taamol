@@ -33,6 +33,7 @@ namespace taamol
             da.Fill(ds);
             bunifuCustomDataGrid1.DataSource = ds.Tables[0];
             //ahmad changed some code
+            //parham added some code
             con.Close();
         }
 
