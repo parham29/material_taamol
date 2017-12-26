@@ -26,7 +26,6 @@ namespace taamol
             DataSet ds = new DataSet();
             SqlCommand com = new SqlCommand("exec getGymsOfManager @manager_id", con);
             com.Parameters.Add("@manager_id", SqlDbType.Int, 4).Value = id;
-            
             SqlDataAdapter da = new SqlDataAdapter(com);
 
             con.Open();
