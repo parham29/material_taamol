@@ -64,10 +64,10 @@
             this.Btn_login.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
             this.Btn_login.IdleForecolor = System.Drawing.Color.White;
             this.Btn_login.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(177)))), ((int)(((byte)(136)))));
-            this.Btn_login.Location = new System.Drawing.Point(126, 366);
-            this.Btn_login.Margin = new System.Windows.Forms.Padding(5);
+            this.Btn_login.Location = new System.Drawing.Point(94, 297);
+            this.Btn_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Btn_login.Name = "Btn_login";
-            this.Btn_login.Size = new System.Drawing.Size(200, 47);
+            this.Btn_login.Size = new System.Drawing.Size(150, 38);
             this.Btn_login.TabIndex = 0;
             this.Btn_login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Btn_login.Click += new System.EventHandler(this.Btn_login_Click);
@@ -78,9 +78,10 @@
             this.panel1.Controls.Add(this.Lbl_username);
             this.panel1.Controls.Add(this.Txt_password);
             this.panel1.Controls.Add(this.Txt_username);
-            this.panel1.Location = new System.Drawing.Point(35, 82);
+            this.panel1.Location = new System.Drawing.Point(26, 67);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(372, 276);
+            this.panel1.Size = new System.Drawing.Size(279, 224);
             this.panel1.TabIndex = 1;
             // 
             // Lbl_password
@@ -88,9 +89,10 @@
             this.Lbl_password.AutoSize = true;
             this.Lbl_password.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_password.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lbl_password.Location = new System.Drawing.Point(3, 137);
+            this.Lbl_password.Location = new System.Drawing.Point(2, 111);
+            this.Lbl_password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_password.Name = "Lbl_password";
-            this.Lbl_password.Size = new System.Drawing.Size(88, 21);
+            this.Lbl_password.Size = new System.Drawing.Size(72, 19);
             this.Lbl_password.TabIndex = 7;
             this.Lbl_password.Text = "Password";
             // 
@@ -99,9 +101,10 @@
             this.Lbl_username.AutoSize = true;
             this.Lbl_username.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_username.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lbl_username.Location = new System.Drawing.Point(3, 51);
+            this.Lbl_username.Location = new System.Drawing.Point(2, 41);
+            this.Lbl_username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_username.Name = "Lbl_username";
-            this.Lbl_username.Size = new System.Drawing.Size(93, 21);
+            this.Lbl_username.Size = new System.Drawing.Size(77, 19);
             this.Lbl_username.TabIndex = 6;
             this.Lbl_username.Text = "Username";
             // 
@@ -117,10 +120,9 @@
             this.Txt_password.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.Txt_password.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Txt_password.isPassword = true;
-            this.Txt_password.Location = new System.Drawing.Point(7, 166);
-            this.Txt_password.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_password.Location = new System.Drawing.Point(4, 135);
             this.Txt_password.Name = "Txt_password";
-            this.Txt_password.Size = new System.Drawing.Size(372, 44);
+            this.Txt_password.Size = new System.Drawing.Size(279, 36);
             this.Txt_password.TabIndex = 2;
             this.Txt_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -136,10 +138,9 @@
             this.Txt_username.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_username.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Txt_username.isPassword = false;
-            this.Txt_username.Location = new System.Drawing.Point(6, 81);
-            this.Txt_username.Margin = new System.Windows.Forms.Padding(4);
+            this.Txt_username.Location = new System.Drawing.Point(4, 66);
             this.Txt_username.Name = "Txt_username";
-            this.Txt_username.Size = new System.Drawing.Size(395, 44);
+            this.Txt_username.Size = new System.Drawing.Size(296, 36);
             this.Txt_username.TabIndex = 1;
             this.Txt_username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -148,23 +149,25 @@
             this.Lbl_header.AutoSize = true;
             this.Lbl_header.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_header.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Lbl_header.Location = new System.Drawing.Point(142, 34);
+            this.Lbl_header.Location = new System.Drawing.Point(106, 28);
+            this.Lbl_header.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_header.Name = "Lbl_header";
-            this.Lbl_header.Size = new System.Drawing.Size(156, 23);
+            this.Lbl_header.Size = new System.Drawing.Size(128, 21);
             this.Lbl_header.TabIndex = 2;
             this.Lbl_header.Text = "Manager Login";
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(445, 463);
+            this.ClientSize = new System.Drawing.Size(334, 376);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Lbl_header);
             this.Controls.Add(this.Btn_login);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
