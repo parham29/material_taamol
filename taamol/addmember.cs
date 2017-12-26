@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace taamol
 {
-    public partial class Form1 : Form
+    public partial class addmember : Form
     {
-        public Form1()
+        public addmember()
         {
             InitializeComponent();
         }
