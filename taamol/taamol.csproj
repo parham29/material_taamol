@@ -33,10 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu UI 1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
-    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
