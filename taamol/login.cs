@@ -65,7 +65,7 @@ namespace taamol
                 //c = c1.conn();
                 //c.Open();
                 //c.Close();
-                
+                //ss
 
 
                 con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = fapzadmin; pwd = 13243546");
