@@ -59,55 +59,5 @@ namespace taamol.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _11417449_985902204784807_1437358688_n {
-            get {
-                object obj = ResourceManager.GetObject("11417449_985902204784807_1437358688_n", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _11417449_985902204784807_1437358688_n1 {
-            get {
-                object obj = ResourceManager.GetObject("11417449_985902204784807_1437358688_n1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Roboto_Medium {
-            get {
-                object obj = ResourceManager.GetObject("Roboto_Medium", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Roboto_Regular {
-            get {
-                object obj = ResourceManager.GetObject("Roboto_Regular", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap user {
-            get {
-                object obj = ResourceManager.GetObject("user", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

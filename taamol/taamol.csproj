@@ -35,11 +35,15 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,13 +63,20 @@
     <Compile Include="addmember.Designer.cs">
       <DependentUpon>addmember.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExtendMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendMember.designer.cs">
+      <DependentUpon>ExtendMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managment.cs" />
+    <Compile Include="MemberModel.cs" />
     <Compile Include="MembersTab.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MembersTab.Designer.cs">
       <DependentUpon>MembersTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="FontManager.cs" />
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="addmember.resx">
       <DependentUpon>addmember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendMember.resx">
+      <DependentUpon>ExtendMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MembersTab.resx">
       <DependentUpon>MembersTab.cs</DependentUpon>
@@ -191,16 +205,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\11417449_985902204784807_1437358688_n.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\11417449_985902204784807_1437358688_n1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Roboto-Medium.ttf" />
-    <EmbeddedResource Include="Resources\Roboto-Regular.ttf" />
-    <None Include="Resources\user.png" />
+    <Content Include="Resources\add_user-64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

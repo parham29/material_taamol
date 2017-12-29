@@ -94,24 +94,12 @@ namespace taamol
             gyms_tab.getGyms(id);
         }
 
-        private void lblname_Click(object sender, EventArgs e)
+        private void members_tab_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void financials1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tab11_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-
+            members_tab.getMembers(id);
         }
     }
+
+       
+    
 }
