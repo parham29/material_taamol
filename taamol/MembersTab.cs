@@ -16,7 +16,8 @@ namespace taamol
     public partial class MembersTab : UserControl
     {
         Managment managment;
-        DataView dv;
+        
+        int index;
 
 
 
@@ -54,14 +55,17 @@ namespace taamol
 
         private void Img_addmember_Click(object sender, EventArgs e)
         {
+            addmember addmember = new addmember();
 
+
+            addmember.ShowDialog();
+            
         }
 
         private void Dgv_allmembers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;
-            DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
-            MessageBox.Show(selectedRow.Cells[1].Value + "");
+            index = e.RowIndex;
+            
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -69,6 +73,13 @@ namespace taamol
             
             
             managment.DView.RowFilter = "member_meli_code like '" + Txt_search.text.ToString() + "%'";
+        }
+
+        private void Img_editmember_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
+
+            managment.deletMember((int)selectedRow.Cells[10].Value);
         }
     }
 }

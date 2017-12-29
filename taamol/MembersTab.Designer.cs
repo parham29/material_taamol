@@ -86,7 +86,8 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Dgv_allmembers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.Dgv_allmembers.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.Dgv_allmembers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_allmembers.BackgroundColor = System.Drawing.Color.White;
             this.Dgv_allmembers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dgv_allmembers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -100,13 +101,15 @@
             this.Dgv_allmembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_allmembers.DoubleBuffered = true;
             this.Dgv_allmembers.EnableHeadersVisualStyles = false;
+            this.Dgv_allmembers.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Dgv_allmembers.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.Dgv_allmembers.HeaderForeColor = System.Drawing.Color.SeaShell;
             this.Dgv_allmembers.Location = new System.Drawing.Point(3, 95);
+            this.Dgv_allmembers.MultiSelect = false;
             this.Dgv_allmembers.Name = "Dgv_allmembers";
             this.Dgv_allmembers.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.Dgv_allmembers.RowTemplate.Height = 24;
-            this.Dgv_allmembers.Size = new System.Drawing.Size(1023, 408);
+            this.Dgv_allmembers.Size = new System.Drawing.Size(1110, 408);
             this.Dgv_allmembers.TabIndex = 0;
             this.Dgv_allmembers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_allmembers_CellClick);
             // 
@@ -129,6 +132,7 @@
             this.Img_editmember.TabIndex = 12;
             this.Img_editmember.TabStop = false;
             this.Img_editmember.Zoom = 10;
+            this.Img_editmember.Click += new System.EventHandler(this.Img_editmember_Click);
             // 
             // Img_deletemember
             // 

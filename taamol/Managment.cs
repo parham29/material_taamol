@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,18 +56,7 @@ namespace taamol
 
                 }
                 com.ExecuteNonQuery();
-                //MessageBox.Show("hello world");
-              /*  int n = (int)com.ExecuteScalar();
-                if (n != -29)
-                {
-                
-
-                }
-                else
-                {
-
-                } */
-
+           
 
             }
             catch (Exception)
@@ -185,7 +175,7 @@ namespace taamol
             try
             {
                 
-                //ArrayList sequence = new ArrayList();
+                
                 com.CommandText = "exec readAllMembers @gym_id";
                 com.Parameters.Clear();
                 com.Parameters.Add("@gym_id", SqlDbType.NVarChar, 50).Value = gym_id;
@@ -194,12 +184,38 @@ namespace taamol
                 SqlDataReader reader = com.ExecuteReader();
                 
                 var dataTable = new DataTable();
+                
                 dataTable.Load(reader);
+                dataTable.Columns.Add("monghazi", typeof(string));
                 dataView = new DataView(dataTable);
+                
                 grid.DataSource = dataView;
                 grid.Columns[11].Visible = false;
                 grid.Columns[10].Visible = false;
+                grid.Columns[7].Visible = false;
                 
+                grid.Columns[0].HeaderText = "name";
+                grid.Columns[1].HeaderText = "family";
+                grid.Columns[2].HeaderText = "gender";
+                grid.Columns[3].HeaderText = "DOB";
+                grid.Columns[4].HeaderText = "melli code";
+                grid.Columns[5].HeaderText = "address";
+                grid.Columns[6].HeaderText = "telephone";
+               // 
+                for (int i = 0; i<grid.RowCount-1; i++) {
+                   
+                            
+                  System.TimeSpan diffResult = (DateTime)grid.Rows[i].Cells[8].Value - (DateTime)DateTime.Now  ;
+                    
+                    String s =diffResult.Days>0?"valid":"invalid";
+                    
+                    grid.Rows[i].Cells[12].Value = s;
+                    
+                   
+                }
+                
+
+
 
             }
             finally
@@ -211,6 +227,35 @@ namespace taamol
             
 
 
+        }
+        public void deletMember(int member_id) {
+            com.CommandText = "exec deleteMember @member_id ";
+            
+            com.Parameters.Clear();
+            com.Parameters.Add("@member_id", SqlDbType.Int, 4).Value = member_id;
+            
+
+
+            try
+            {
+                if (com.Connection.State == ConnectionState.Closed)
+                {
+                    com.Connection.Open();
+
+                }
+                com.ExecuteNonQuery();
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
         }
         protected void button_Click(object sender, EventArgs e)
         {
