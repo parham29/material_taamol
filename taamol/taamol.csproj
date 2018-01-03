@@ -63,12 +63,19 @@
     <Compile Include="addmember.Designer.cs">
       <DependentUpon>addmember.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMember.Designer.cs">
+      <DependentUpon>EditMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExtendMember.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ExtendMember.designer.cs">
       <DependentUpon>ExtendMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="managerModel.cs" />
     <Compile Include="Managment.cs" />
     <Compile Include="MemberModel.cs" />
     <Compile Include="MembersTab.cs">
@@ -126,6 +133,9 @@
     </Compile>
     <EmbeddedResource Include="addmember.resx">
       <DependentUpon>addmember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMember.resx">
+      <DependentUpon>EditMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExtendMember.resx">
       <DependentUpon>ExtendMember.cs</DependentUpon>

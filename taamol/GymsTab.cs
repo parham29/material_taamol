@@ -22,7 +22,7 @@ namespace taamol
         }
         public void getGyms(int id) {
 
-            con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = fapzadmin; pwd = 13243546");
+            con = connect.conn();
             DataSet ds = new DataSet();
             SqlCommand com = new SqlCommand("exec getGymsOfManager @manager_id", con);
             com.Parameters.Add("@manager_id", SqlDbType.Int, 4).Value = id;

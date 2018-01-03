@@ -26,6 +26,9 @@ namespace taamol
         {
             line.Width = lbltab1.Width;
             line.Left = lbltab1.Left;
+            managerModel m = Managment.getInstance().getManagerName(id);
+            lblname.Text = m.Name;
+            lblfamily.Text = m.Family;
 
         }
 
@@ -97,6 +100,11 @@ namespace taamol
         private void members_tab_Load(object sender, EventArgs e)
         {
             members_tab.getMembers(id);
+        }
+
+        private void financials_tab_Load(object sender, EventArgs e)
+        {
+            financials_tab.getfinancials(id);
         }
     }
 

@@ -12,11 +12,13 @@ namespace taamol
 {
     public partial class addmember : Form
     {
-        public addmember()
+        int manager_id;
+        public addmember(int manager_id)
         {
             InitializeComponent();
+            this.manager_id = manager_id;
         }
-        Managment managment;
+       
         
 
 
@@ -73,10 +75,14 @@ namespace taamol
                 model.Mobile = Txt_mobile.Text.ToString();
                 model.Expire_date = DateTime.Now.AddDays(((Cmb_period.SelectedIndex + 1) * 30));
                 model.Gymid = Convert.ToInt32(Cmb_gyms.SelectedValue);
-               // Txt_price.Text;
+                // Txt_price.Text;
 
-                managment.addmember(model,Convert.ToInt64(Txt_price.Text.ToString()));
-                MessageBox.Show("successfully added"); 
+                Managment.getInstance().addmember(model,Convert.ToInt64(Txt_price.Text.ToString()));
+                MessageBox.Show("successfully added");
+                Managment.getInstance().refreshmembersgrid(Convert.ToInt32(Cmb_gyms.SelectedValue));
+                Close();
+
+
             }
 
             }
@@ -84,8 +90,8 @@ namespace taamol
             private void addmember_Load(object sender, EventArgs e)
         {
             
-            managment = new Managment();
-            managment.getgymsnames(Cmb_gyms,3);
+            
+            Managment.getInstance().getgymsnames(Cmb_gyms, manager_id);
             Cmb_period.SelectedIndex = 0;
 
 

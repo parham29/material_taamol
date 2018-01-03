@@ -15,9 +15,10 @@ namespace taamol
 {
     public partial class MembersTab : UserControl
     {
-        Managment managment;
+        
         
         int index;
+        int member_id;
 
 
 
@@ -29,16 +30,16 @@ namespace taamol
 
         private void MembersTab_Load(object sender, EventArgs e)
         {
-            managment = new Managment();
+            
 
 
         }
         public void getMembers(int id)
         {
 
-
-            OrderedDictionary dic = managment.getgymsnamesAndid(id, panel1);
-            managment.readAllmembers((int)dic[0], Dgv_allmembers);
+            this.member_id = id;
+            OrderedDictionary dic = Managment.getInstance().getgymsnamesAndid(id, panel1,line_member,Txt_search);
+            Managment.getInstance().readAllmembers((int)dic[0], Dgv_allmembers);
         }
 
         
@@ -55,7 +56,7 @@ namespace taamol
 
         private void Img_addmember_Click(object sender, EventArgs e)
         {
-            addmember addmember = new addmember();
+            addmember addmember = new addmember(member_id);
 
 
             addmember.ShowDialog();
@@ -70,16 +71,75 @@ namespace taamol
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            
-            
-            managment.DView.RowFilter = "member_meli_code like '" + Txt_search.text.ToString() + "%'";
+
+
+            Managment.getInstance().DView.RowFilter = "member_meli_code like '" + Txt_search.text.ToString() + "%'";
         }
 
         private void Img_editmember_Click(object sender, EventArgs e)
         {
-            DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
+            try
+            {   
+                DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
+                MessageBox.Show((int)selectedRow.Cells[10].Value+"");
+                EditMember edit = new EditMember((int)selectedRow.Cells[10].Value, (int)selectedRow.Cells[11].Value);
+                edit.ShowDialog();
+                //managment.deletMember((int)selectedRow.Cells[10].Value);
+            }
+            catch (Exception s)
+            {
 
-            managment.deletMember((int)selectedRow.Cells[10].Value);
+
+            }
+
+
         }
+
+        private void Img_deletemember_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
+                Managment.getInstance().deletMember((int)selectedRow.Cells[10].Value, (int)selectedRow.Cells[11].Value);
+                Managment.getInstance().refreshmembersgrid((int)selectedRow.Cells[11].Value);
+                //   ExtendMember extendMember = new ExtendMember((int)selectedRow.Cells[10].Value, (int)selectedRow.Cells[11].Value);
+
+
+                // extendMember.ShowDialog();
+            }
+            catch (Exception s)
+            {
+
+
+            }
+        }
+
+        private void Img_extendmember_Click(object sender, EventArgs e)
+
+        {
+
+            try { DataGridViewRow selectedRow = Dgv_allmembers.Rows[index];
+                if (selectedRow.Cells[12].Value.ToString() == "invalid")
+                {
+                    ExtendMember extendMember = new ExtendMember((int)selectedRow.Cells[10].Value, (int)selectedRow.Cells[11].Value);
+                    extendMember.ShowDialog();
+                }
+                else {
+
+                    MessageBox.Show("user is " + selectedRow.Cells[12].Value);
+                }
+           
+            }
+            catch (Exception s) {
+
+
+            }
+
+          
+
+          
+        }
+
+       
     }
 }

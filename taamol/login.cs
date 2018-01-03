@@ -20,10 +20,12 @@ namespace taamol
             InitializeComponent();
         }
         SqlConnection con;
+        SqlCommand com;
 
-      
 
-       
+
+
+
 
         private void login_Load(object sender, EventArgs e)
         {
@@ -68,15 +70,19 @@ namespace taamol
                 //ss
 
 
-                con = new SqlConnection("server=.\\PTSSQLSERVER; database = Gyms_Managment; uid = fapzadmin; pwd = 13243546");
+                con = connect.conn();
+                com = new SqlCommand();
 
 
-                SqlCommand com = new SqlCommand("exec loginManager @username, @password", con);
-                com.Parameters.Add("@username", SqlDbType.NVarChar, 50).Value = Txt_username.Text.ToString();
-                com.Parameters.Add("@password ", SqlDbType.NVarChar, 50).Value = Txt_password.Text.ToString();
+
 
                 try
                 {
+                    
+                    com.CommandText = "exec loginManager @username, @password";
+                    com.Connection = con;
+                    com.Parameters.Add("@username", SqlDbType.NVarChar, 50).Value = Txt_username.Text.ToString();
+                    com.Parameters.Add("@password", SqlDbType.NVarChar, 50).Value = Txt_password.Text.ToString();
                     if (com.Connection.State == ConnectionState.Closed)
                     {
                         com.Connection.Open();
@@ -105,7 +111,7 @@ namespace taamol
                 }
                 catch (Exception)
                 {
-
+                    MessageBox.Show("errror ");
                 }
                 finally
                 {

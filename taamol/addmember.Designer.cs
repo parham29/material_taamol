@@ -32,8 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addmember));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Txt_price = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Txt_price = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.Cmb_gyms = new System.Windows.Forms.ComboBox();
             this.Cmb_period = new System.Windows.Forms.ComboBox();
             this.Lbl_gym = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -60,12 +61,11 @@
             this.Datepicker_DOB = new Bunifu.Framework.UI.BunifuDatepicker();
             this.Lbl_DOB = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.img_exit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_exit)).BeginInit();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -75,7 +75,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(123)))), ((int)(((byte)(145)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.Cmb_gyms);
             this.panel1.Controls.Add(this.Cmb_period);
@@ -95,12 +95,33 @@
             this.panel1.Size = new System.Drawing.Size(669, 617);
             this.panel1.TabIndex = 0;
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.bunifuCustomLabel2);
+            this.panel4.Controls.Add(this.Txt_price);
+            this.panel4.Location = new System.Drawing.Point(332, 447);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(273, 88);
+            this.panel4.TabIndex = 56;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(-1, 6);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(50, 21);
+            this.bunifuCustomLabel2.TabIndex = 55;
+            this.bunifuCustomLabel2.Text = "Price";
+            // 
             // Txt_price
             // 
             this.Txt_price.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_price.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_price.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_price.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_price.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_price.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_price.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_price.BorderThickness = 1;
             this.Txt_price.CausesValidation = false;
             this.Txt_price.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -115,21 +136,9 @@
             this.Txt_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Txt_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_price_KeyPress);
             // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(-1, 6);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(50, 21);
-            this.bunifuCustomLabel2.TabIndex = 55;
-            this.bunifuCustomLabel2.Text = "Price";
-            // 
             // Cmb_gyms
             // 
-            this.Cmb_gyms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.Cmb_gyms.BackColor = System.Drawing.Color.SeaGreen;
             this.Cmb_gyms.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cmb_gyms.ForeColor = System.Drawing.Color.White;
             this.Cmb_gyms.FormattingEnabled = true;
@@ -146,7 +155,7 @@
             // 
             // Cmb_period
             // 
-            this.Cmb_period.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.Cmb_period.BackColor = System.Drawing.Color.SeaGreen;
             this.Cmb_period.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cmb_period.ForeColor = System.Drawing.Color.White;
             this.Cmb_period.FormattingEnabled = true;
@@ -166,7 +175,7 @@
             this.Lbl_gym.AutoSize = true;
             this.Lbl_gym.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_gym.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_gym.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_gym.ForeColor = System.Drawing.Color.Black;
             this.Lbl_gym.Location = new System.Drawing.Point(328, 373);
             this.Lbl_gym.Name = "Lbl_gym";
             this.Lbl_gym.Size = new System.Drawing.Size(48, 21);
@@ -185,14 +194,14 @@
             // Txt_Address
             // 
             this.Txt_Address.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_Address.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_Address.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_Address.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_Address.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_Address.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_Address.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_Address.BorderThickness = 1;
             this.Txt_Address.CausesValidation = false;
             this.Txt_Address.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_Address.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Address.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_Address.ForeColor = System.Drawing.Color.Black;
             this.Txt_Address.isPassword = false;
             this.Txt_Address.Location = new System.Drawing.Point(-3, 43);
             this.Txt_Address.Margin = new System.Windows.Forms.Padding(4);
@@ -206,7 +215,7 @@
             this.Lbl_Address.AutoSize = true;
             this.Lbl_Address.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Address.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Address.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_Address.ForeColor = System.Drawing.Color.Black;
             this.Lbl_Address.Location = new System.Drawing.Point(3, 20);
             this.Lbl_Address.Name = "Lbl_Address";
             this.Lbl_Address.Size = new System.Drawing.Size(77, 21);
@@ -218,7 +227,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(328, 292);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(62, 21);
@@ -237,6 +246,7 @@
             this.panel2.Controls.Add(this.Txt_telephone);
             this.panel2.Controls.Add(this.Lbl_telephone);
             this.panel2.Controls.Add(this.Lbl_MeliCode);
+            this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(16, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(256, 528);
@@ -245,14 +255,14 @@
             // Txt_mobile
             // 
             this.Txt_mobile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_mobile.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_mobile.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_mobile.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_mobile.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_mobile.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_mobile.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_mobile.BorderThickness = 1;
             this.Txt_mobile.CausesValidation = false;
             this.Txt_mobile.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_mobile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_mobile.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_mobile.ForeColor = System.Drawing.Color.Black;
             this.Txt_mobile.isPassword = false;
             this.Txt_mobile.Location = new System.Drawing.Point(-3, 478);
             this.Txt_mobile.Margin = new System.Windows.Forms.Padding(4);
@@ -268,7 +278,7 @@
             this.Lbl_mobile.AutoSize = true;
             this.Lbl_mobile.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_mobile.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_mobile.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_mobile.ForeColor = System.Drawing.Color.Black;
             this.Lbl_mobile.Location = new System.Drawing.Point(7, 452);
             this.Lbl_mobile.Name = "Lbl_mobile";
             this.Lbl_mobile.Size = new System.Drawing.Size(65, 21);
@@ -278,14 +288,14 @@
             // Txt_family
             // 
             this.Txt_family.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_family.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_family.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_family.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_family.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_family.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_family.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_family.BorderThickness = 1;
             this.Txt_family.CausesValidation = false;
             this.Txt_family.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_family.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_family.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_family.ForeColor = System.Drawing.Color.Black;
             this.Txt_family.isPassword = false;
             this.Txt_family.Location = new System.Drawing.Point(-2, 157);
             this.Txt_family.Margin = new System.Windows.Forms.Padding(4);
@@ -297,14 +307,14 @@
             // txt_mellicode
             // 
             this.txt_mellicode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txt_mellicode.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.txt_mellicode.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.txt_mellicode.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.txt_mellicode.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.txt_mellicode.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.txt_mellicode.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.txt_mellicode.BorderThickness = 1;
             this.txt_mellicode.CausesValidation = false;
             this.txt_mellicode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_mellicode.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mellicode.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_mellicode.ForeColor = System.Drawing.Color.Black;
             this.txt_mellicode.isPassword = false;
             this.txt_mellicode.Location = new System.Drawing.Point(-3, 263);
             this.txt_mellicode.Margin = new System.Windows.Forms.Padding(4);
@@ -318,14 +328,14 @@
             // Txt_name
             // 
             this.Txt_name.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_name.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_name.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_name.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_name.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_name.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_name.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_name.BorderThickness = 1;
             this.Txt_name.CausesValidation = false;
             this.Txt_name.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_name.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_name.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_name.ForeColor = System.Drawing.Color.Black;
             this.Txt_name.isPassword = false;
             this.Txt_name.Location = new System.Drawing.Point(-2, 59);
             this.Txt_name.Margin = new System.Windows.Forms.Padding(4);
@@ -339,7 +349,7 @@
             this.Lbl_name.AutoSize = true;
             this.Lbl_name.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_name.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_name.ForeColor = System.Drawing.Color.Transparent;
+            this.Lbl_name.ForeColor = System.Drawing.Color.Black;
             this.Lbl_name.Location = new System.Drawing.Point(7, 36);
             this.Lbl_name.Name = "Lbl_name";
             this.Lbl_name.Size = new System.Drawing.Size(61, 21);
@@ -351,7 +361,7 @@
             this.Lbl_FamilyName.AutoSize = true;
             this.Lbl_FamilyName.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_FamilyName.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_FamilyName.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_FamilyName.ForeColor = System.Drawing.Color.Black;
             this.Lbl_FamilyName.Location = new System.Drawing.Point(7, 133);
             this.Lbl_FamilyName.Name = "Lbl_FamilyName";
             this.Lbl_FamilyName.Size = new System.Drawing.Size(115, 21);
@@ -361,14 +371,14 @@
             // Txt_telephone
             // 
             this.Txt_telephone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Txt_telephone.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
-            this.Txt_telephone.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.Txt_telephone.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(6)))), ((int)(((byte)(59)))));
+            this.Txt_telephone.BorderColorFocused = System.Drawing.Color.SeaGreen;
+            this.Txt_telephone.BorderColorIdle = System.Drawing.Color.SeaGreen;
+            this.Txt_telephone.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.Txt_telephone.BorderThickness = 1;
             this.Txt_telephone.CausesValidation = false;
             this.Txt_telephone.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Txt_telephone.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_telephone.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Txt_telephone.ForeColor = System.Drawing.Color.Black;
             this.Txt_telephone.isPassword = false;
             this.Txt_telephone.Location = new System.Drawing.Point(-3, 373);
             this.Txt_telephone.Margin = new System.Windows.Forms.Padding(4);
@@ -384,7 +394,7 @@
             this.Lbl_telephone.AutoSize = true;
             this.Lbl_telephone.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_telephone.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_telephone.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_telephone.ForeColor = System.Drawing.Color.Black;
             this.Lbl_telephone.Location = new System.Drawing.Point(7, 346);
             this.Lbl_telephone.Name = "Lbl_telephone";
             this.Lbl_telephone.Size = new System.Drawing.Size(97, 21);
@@ -396,7 +406,7 @@
             this.Lbl_MeliCode.AutoSize = true;
             this.Lbl_MeliCode.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_MeliCode.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_MeliCode.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_MeliCode.ForeColor = System.Drawing.Color.Black;
             this.Lbl_MeliCode.Location = new System.Drawing.Point(7, 235);
             this.Lbl_MeliCode.Name = "Lbl_MeliCode";
             this.Lbl_MeliCode.Size = new System.Drawing.Size(97, 21);
@@ -412,8 +422,8 @@
             this.OSSwitch_Gender.Location = new System.Drawing.Point(444, 158);
             this.OSSwitch_Gender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OSSwitch_Gender.Name = "OSSwitch_Gender";
-            this.OSSwitch_Gender.OffColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
-            this.OSSwitch_Gender.OnColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.OSSwitch_Gender.OffColor = System.Drawing.Color.SeaGreen;
+            this.OSSwitch_Gender.OnColor = System.Drawing.Color.SeaGreen;
             this.OSSwitch_Gender.Size = new System.Drawing.Size(35, 20);
             this.OSSwitch_Gender.TabIndex = 7;
             this.OSSwitch_Gender.Value = true;
@@ -422,10 +432,10 @@
             // 
             this.Btn_addmember.ActiveBorderThickness = 1;
             this.Btn_addmember.ActiveCornerRadius = 20;
-            this.Btn_addmember.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(70)))), ((int)(((byte)(112)))));
-            this.Btn_addmember.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(123)))), ((int)(((byte)(145)))));
+            this.Btn_addmember.ActiveFillColor = System.Drawing.Color.White;
+            this.Btn_addmember.ActiveForecolor = System.Drawing.Color.White;
             this.Btn_addmember.ActiveLineColor = System.Drawing.Color.Transparent;
-            this.Btn_addmember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(123)))), ((int)(((byte)(145)))));
+            this.Btn_addmember.BackColor = System.Drawing.Color.White;
             this.Btn_addmember.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_addmember.BackgroundImage")));
             this.Btn_addmember.ButtonText = "Add";
             this.Btn_addmember.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -433,9 +443,9 @@
             this.Btn_addmember.ForeColor = System.Drawing.Color.White;
             this.Btn_addmember.IdleBorderThickness = 1;
             this.Btn_addmember.IdleCornerRadius = 20;
-            this.Btn_addmember.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.Btn_addmember.IdleFillColor = System.Drawing.Color.SeaGreen;
             this.Btn_addmember.IdleForecolor = System.Drawing.Color.White;
-            this.Btn_addmember.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.Btn_addmember.IdleLineColor = System.Drawing.Color.SeaGreen;
             this.Btn_addmember.Location = new System.Drawing.Point(210, 554);
             this.Btn_addmember.Margin = new System.Windows.Forms.Padding(5);
             this.Btn_addmember.Name = "Btn_addmember";
@@ -449,7 +459,7 @@
             this.Lbl_Gender.AutoSize = true;
             this.Lbl_Gender.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_Gender.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Gender.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_Gender.ForeColor = System.Drawing.Color.Black;
             this.Lbl_Gender.Location = new System.Drawing.Point(326, 122);
             this.Lbl_Gender.Name = "Lbl_Gender";
             this.Lbl_Gender.Size = new System.Drawing.Size(79, 21);
@@ -461,7 +471,7 @@
             this.Lbl_male.AutoSize = true;
             this.Lbl_male.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_male.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_male.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_male.ForeColor = System.Drawing.Color.Black;
             this.Lbl_male.Location = new System.Drawing.Point(520, 157);
             this.Lbl_male.Name = "Lbl_male";
             this.Lbl_male.Size = new System.Drawing.Size(53, 21);
@@ -473,7 +483,7 @@
             this.Lbl_female.AutoSize = true;
             this.Lbl_female.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_female.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_female.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_female.ForeColor = System.Drawing.Color.Black;
             this.Lbl_female.Location = new System.Drawing.Point(328, 157);
             this.Lbl_female.Name = "Lbl_female";
             this.Lbl_female.Size = new System.Drawing.Size(70, 21);
@@ -482,7 +492,7 @@
             // 
             // Datepicker_DOB
             // 
-            this.Datepicker_DOB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.Datepicker_DOB.BackColor = System.Drawing.Color.SeaGreen;
             this.Datepicker_DOB.BorderRadius = 0;
             this.Datepicker_DOB.ForeColor = System.Drawing.Color.White;
             this.Datepicker_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
@@ -499,7 +509,7 @@
             this.Lbl_DOB.AutoSize = true;
             this.Lbl_DOB.BackColor = System.Drawing.Color.Transparent;
             this.Lbl_DOB.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_DOB.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Lbl_DOB.ForeColor = System.Drawing.Color.Black;
             this.Lbl_DOB.Location = new System.Drawing.Point(328, 199);
             this.Lbl_DOB.Name = "Lbl_DOB";
             this.Lbl_DOB.Size = new System.Drawing.Size(119, 21);
@@ -508,7 +518,7 @@
             // 
             // img_exit
             // 
-            this.img_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.img_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(174)))));
             this.img_exit.Image = ((System.Drawing.Image)(resources.GetObject("img_exit.Image")));
             this.img_exit.ImageActive = null;
             this.img_exit.Location = new System.Drawing.Point(707, 4);
@@ -520,23 +530,15 @@
             this.img_exit.Zoom = 10;
             this.img_exit.Click += new System.EventHandler(this.img_exit_Click);
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.bunifuCustomLabel2);
-            this.panel4.Controls.Add(this.Txt_price);
-            this.panel4.Location = new System.Drawing.Point(332, 447);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(273, 88);
-            this.panel4.TabIndex = 56;
-            // 
             // addmember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(60)))), ((int)(((byte)(102)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(174)))));
             this.ClientSize = new System.Drawing.Size(744, 695);
             this.Controls.Add(this.img_exit);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "addmember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -544,13 +546,13 @@
             this.Load += new System.EventHandler(this.addmember_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_exit)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

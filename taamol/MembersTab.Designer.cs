@@ -40,18 +40,22 @@
             this.fapz_adminTableAdapter1 = new taamol.Gyms_ManagmentDataSet1TableAdapters.fapz_adminTableAdapter();
             this.Dgv_allmembers = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.line_member = new Bunifu.Framework.UI.BunifuSeparator();
             this.Img_editmember = new Bunifu.Framework.UI.BunifuImageButton();
             this.Img_deletemember = new Bunifu.Framework.UI.BunifuImageButton();
             this.Img_addmember = new Bunifu.Framework.UI.BunifuImageButton();
             this.Txt_search = new Bunifu.Framework.UI.BunifuTextbox();
+            this.Img_extendmember = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.fapzadminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gyms_ManagmentDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gyms_ManagmentDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fapzadminBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_allmembers)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img_editmember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_deletemember)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_addmember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_extendmember)).BeginInit();
             this.SuspendLayout();
             // 
             // fapzadminBindingSource
@@ -115,10 +119,25 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.line_member);
             this.panel1.Location = new System.Drawing.Point(3, 59);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1110, 30);
             this.panel1.TabIndex = 8;
+            // 
+            // line_member
+            // 
+            this.line_member.BackColor = System.Drawing.Color.Transparent;
+            this.line_member.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.line_member.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.line_member.LineThickness = 3;
+            this.line_member.Location = new System.Drawing.Point(357, 20);
+            this.line_member.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.line_member.Name = "line_member";
+            this.line_member.Size = new System.Drawing.Size(91, 12);
+            this.line_member.TabIndex = 5;
+            this.line_member.Transparency = 255;
+            this.line_member.Vertical = false;
             // 
             // Img_editmember
             // 
@@ -146,6 +165,7 @@
             this.Img_deletemember.TabIndex = 11;
             this.Img_deletemember.TabStop = false;
             this.Img_deletemember.Zoom = 10;
+            this.Img_deletemember.Click += new System.EventHandler(this.Img_deletemember_Click);
             // 
             // Img_addmember
             // 
@@ -176,11 +196,26 @@
             this.Txt_search.text = "";
             this.Txt_search.OnTextChange += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // Img_extendmember
+            // 
+            this.Img_extendmember.BackColor = System.Drawing.Color.Transparent;
+            this.Img_extendmember.Image = ((System.Drawing.Image)(resources.GetObject("Img_extendmember.Image")));
+            this.Img_extendmember.ImageActive = null;
+            this.Img_extendmember.Location = new System.Drawing.Point(886, 2);
+            this.Img_extendmember.Name = "Img_extendmember";
+            this.Img_extendmember.Size = new System.Drawing.Size(61, 50);
+            this.Img_extendmember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Img_extendmember.TabIndex = 13;
+            this.Img_extendmember.TabStop = false;
+            this.Img_extendmember.Zoom = 10;
+            this.Img_extendmember.Click += new System.EventHandler(this.Img_extendmember_Click);
+            // 
             // MembersTab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.Img_extendmember);
             this.Controls.Add(this.Img_editmember);
             this.Controls.Add(this.Img_deletemember);
             this.Controls.Add(this.Img_addmember);
@@ -195,9 +230,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.gyms_ManagmentDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fapzadminBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_allmembers)).EndInit();
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Img_editmember)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_deletemember)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_addmember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_extendmember)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,5 +252,7 @@
         private Bunifu.Framework.UI.BunifuImageButton Img_addmember;
         private Bunifu.Framework.UI.BunifuImageButton Img_deletemember;
         private Bunifu.Framework.UI.BunifuImageButton Img_editmember;
+        private Bunifu.Framework.UI.BunifuImageButton Img_extendmember;
+        private Bunifu.Framework.UI.BunifuSeparator line_member;
     }
 }

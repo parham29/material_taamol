@@ -18,14 +18,29 @@ namespace taamol
         SqlCommand com;
         OrderedDictionary hshTable;
         Bunifu.Framework.UI.BunifuCustomDataGrid allmembersgrid;
+        Bunifu.Framework.UI.BunifuSeparator line_member;
+        Bunifu.Framework.UI.BunifuTextbox txt_search;
         DataView dataView;
         int i = 0;
         int x = 22;
         int noofcontrols = 0;
         Label[] l1 = new Label[25];
-        public Managment() {
+        private static Managment instance;
+        private Managment() {
             com = new SqlCommand();
             com.Connection = connect.conn();
+            
+        }
+
+        public static Managment getInstance() {
+
+           
+
+                if (instance == null) {
+                    instance = new Managment();
+
+                }
+                return instance;
             
         }
         
@@ -84,9 +99,11 @@ namespace taamol
             cmb.DisplayMember = ds1.Tables[0].Columns[1].ColumnName;
 
         }
-        public OrderedDictionary getgymsnamesAndid( int managerid,Panel panel)
+        public OrderedDictionary getgymsnamesAndid( int managerid,Panel panel, Bunifu.Framework.UI.BunifuSeparator memeber_line, Bunifu.Framework.UI.BunifuTextbox txt_search)
         {
             hshTable = new OrderedDictionary();
+            this.line_member = memeber_line;
+            this.txt_search = txt_search;
             try
             {
 
@@ -109,9 +126,11 @@ namespace taamol
                     l1[i].Click += new EventHandler(button_Click);
                     panel.Controls.Add(l1[i]);
                     panel.AutoSize = true;
+                    l1[i].AutoSize = true;
                     panel.Show();
                     panel.Refresh();
-
+                    
+                   
                     i++;
                     x = x + 200;
                     noofcontrols++;
@@ -169,6 +188,178 @@ namespace taamol
 
         }
 
+
+
+        public MemberModel geteditData(int member_id)
+        {
+            MemberModel member = new MemberModel();
+
+            try
+            {
+
+                //ArrayList sequence = new ArrayList();
+                com.CommandText = "exec GetMemberData @member_id";
+                com.Parameters.Clear();
+                com.Parameters.Add("@member_id", SqlDbType.Int, 4).Value = member_id;
+              
+
+                com.Connection.Open();
+                SqlDataReader reader = com.ExecuteReader();
+                while (reader.Read())
+                {
+
+                    
+                    member.Name = reader[1].ToString();
+                    member.Family = reader[2].ToString();
+                    member.Gender = (int)reader[3];
+                    member.Melicode = reader[4].ToString();
+                    member.Address = reader[5].ToString();
+                    member.Phone = reader[6].ToString();
+                    member.Mobile = reader[7].ToString();
+
+                }
+                //dataGridView1.DataSource = sequence;
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
+            return member;
+
+
+
+        }
+
+        public void EditMember(int member_id, string member_name, string member_family, int member_gender, string member_address, string member_telephone, string member_mobile) {
+            com.CommandText = "exec EditMember @member_id, @member_name, @member_family,@member_gender, @member_address, @member_telephone,@member_mobile";
+
+            com.Parameters.Clear();
+            com.Parameters.Add("@member_id", SqlDbType.Int, 4).Value = member_id;
+            com.Parameters.Add("@member_name", SqlDbType.NVarChar, 50).Value = member_name;
+            com.Parameters.Add("@member_family", SqlDbType.NVarChar, 50).Value = member_family;
+            com.Parameters.Add("@member_gender", SqlDbType.Int, 4).Value = member_gender;
+            com.Parameters.Add("@member_address", SqlDbType.NVarChar, 50).Value = member_address;
+            com.Parameters.Add("@member_telephone", SqlDbType.NVarChar, 50).Value = member_telephone;
+            com.Parameters.Add("@member_mobile", SqlDbType.NVarChar, 50).Value = member_mobile;
+
+
+
+
+
+
+            try
+            {
+                if (com.Connection.State == ConnectionState.Closed)
+                {
+                    com.Connection.Open();
+
+                }
+                com.ExecuteNonQuery();
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public void extendmember(int member_id,int gym_id, Int64 member_cost, int period_time) {
+
+
+            com.CommandText = "exec extendMember @member_id,@gym_id,@member_cost,@period_time";
+            //com = new SqlCommand("exec addmember @member_name,@member_family,@member_gender,@member_DOB,@member_meli_code,@member_address,@member_telephone,@member_registration_date,@member_expire_date,@member_mobile,@gym_id", connect.conn());
+            com.Parameters.Clear();
+           
+            com.Parameters.Add("@member_id", SqlDbType.Int, 4).Value = member_id;
+            com.Parameters.Add("@gym_id", SqlDbType.Int, 4).Value = gym_id;
+            com.Parameters.Add("@member_cost", SqlDbType.BigInt, 8).Value = member_cost;
+            com.Parameters.Add("@period_time", SqlDbType.Int, 4).Value = period_time;
+            
+
+
+            try
+            {
+                if (com.Connection.State == ConnectionState.Closed)
+                {
+                    com.Connection.Open();
+
+                }
+                com.ExecuteNonQuery();
+
+
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
+
+        }
+        public managerModel getManagerName(int manager_id) {
+
+            managerModel manager = new managerModel();
+
+            try
+            {
+
+               
+                com.CommandText = "exec getGymsOfManager @manager_id";
+                com.Parameters.Clear();
+                com.Parameters.Add("@manager_id", SqlDbType.Int, 4).Value = manager_id;
+
+
+                com.Connection.Open();
+                SqlDataReader reader = com.ExecuteReader();
+                while (reader.Read())
+                {
+
+                    manager.Name = reader[5].ToString();
+                    manager.Family = reader[6].ToString();
+                    
+
+
+
+                }
+                
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
+
+            return manager;
+
+        }
+
+
+
         public void readAllmembers(int gym_id,Bunifu.Framework.UI.BunifuCustomDataGrid grid) {
            
             allmembersgrid = grid;
@@ -201,7 +392,11 @@ namespace taamol
                 grid.Columns[4].HeaderText = "melli code";
                 grid.Columns[5].HeaderText = "address";
                 grid.Columns[6].HeaderText = "telephone";
-               // 
+                 
+             
+                    line_member.Width = l1[0].Width;
+                    line_member.Left = l1[0].Left;
+               
                 for (int i = 0; i<grid.RowCount-1; i++) {
                    
                             
@@ -228,12 +423,53 @@ namespace taamol
 
 
         }
-        public void deletMember(int member_id) {
-            com.CommandText = "exec deleteMember @member_id ";
+
+        public void getFinancials(int manager_id,int type, Bunifu.Framework.UI.BunifuCustomDataGrid grid) {
+
+
+            
+            try
+            {
+
+
+                com.CommandText = "exec getFinancialsOfmanager @manager_id,@financialtype";
+                com.Parameters.Clear();
+                com.Parameters.Add("@manager_id", SqlDbType.Int, 4).Value = manager_id;
+                com.Parameters.Add("@financialtype", SqlDbType.Int, 4).Value = type;
+
+                com.Connection.Open();
+                SqlDataReader reader = com.ExecuteReader();
+
+                var dataTable = new DataTable();
+
+                dataTable.Load(reader);
+               
+                dataView = new DataView(dataTable);
+
+                grid.DataSource = dataView;
+               
+
+
+                
+
+
+
+
+            }
+            finally
+            {
+                com.Connection.Close();
+
+            }
+        }
+        public void deletMember(int member_id,int gym_id) {
+            com.CommandText = "exec deleteMemeber @member_id,@gym_id";
+
             
             com.Parameters.Clear();
             com.Parameters.Add("@member_id", SqlDbType.Int, 4).Value = member_id;
-            
+            com.Parameters.Add("@gym_id", SqlDbType.Int, 4).Value = gym_id;
+
 
 
             try
@@ -260,9 +496,17 @@ namespace taamol
         protected void button_Click(object sender, EventArgs e)
         {
             Label label = sender as Label;
+            txt_search.text = "";
             readAllmembers((int)hshTable[label.Text.ToString()], allmembersgrid);
-            
-            
+            line_member.Width = label.Width;
+            line_member.Left = label.Left;
+
+
+        }
+
+        public void refreshmembersgrid(int gym_id) {
+
+            readAllmembers(gym_id, allmembersgrid);
         }
         public DataView DView
         {

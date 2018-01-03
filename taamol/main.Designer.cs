@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.header = new System.Windows.Forms.Panel();
@@ -184,26 +184,26 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // gyms_tab
             // 
-            this.gyms_tab.BackColor = System.Drawing.Color.Blue;
+            this.gyms_tab.BackColor = System.Drawing.Color.White;
             this.bunifuTransition1.SetDecoration(this.gyms_tab, BunifuAnimatorNS.DecorationType.None);
             this.gyms_tab.Location = new System.Drawing.Point(54, 216);
             this.gyms_tab.Name = "gyms_tab";
@@ -223,12 +223,13 @@
             // 
             // financials_tab
             // 
-            this.financials_tab.BackColor = System.Drawing.Color.Gray;
+            this.financials_tab.BackColor = System.Drawing.Color.White;
             this.bunifuTransition1.SetDecoration(this.financials_tab, BunifuAnimatorNS.DecorationType.None);
             this.financials_tab.Location = new System.Drawing.Point(54, 216);
             this.financials_tab.Name = "financials_tab";
             this.financials_tab.Size = new System.Drawing.Size(1114, 483);
             this.financials_tab.TabIndex = 7;
+            this.financials_tab.Load += new System.EventHandler(this.financials_tab_Load);
             // 
             // main
             // 
@@ -241,9 +242,9 @@
             this.Controls.Add(this.lbltab2);
             this.Controls.Add(this.lbltab1);
             this.Controls.Add(this.header);
+            this.Controls.Add(this.gyms_tab);
             this.Controls.Add(this.members_tab);
             this.Controls.Add(this.financials_tab);
-            this.Controls.Add(this.gyms_tab);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";

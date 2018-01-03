@@ -16,5 +16,16 @@ namespace taamol
         {
             InitializeComponent();
         }
+
+        public void getfinancials(int manager_id) {
+
+            Managment.getInstance().getFinancials(manager_id, 1, Dgv_register_income); 
+            Managment.getInstance().getFinancials(manager_id, 2, Dgv_extend_income);
+        }
+
+        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
